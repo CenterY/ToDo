@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09094E831EF25FA800971286 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09094E821EF25FA800971286 /* NotificationCenter.framework */; };
+		09094E871EF25FA800971286 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09094E861EF25FA800971286 /* TodayViewController.m */; };
+		09094E8A1EF25FA800971286 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09094E881EF25FA800971286 /* MainInterface.storyboard */; };
+		09094E8E1EF25FA800971286 /* testWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 09094E801EF25FA800971286 /* testWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		095AE7AB1E582AFC0020B7CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095AE7AA1E582AFC0020B7CA /* AppDelegate.swift */; };
 		095AE7B01E582AFC0020B7CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095AE7AE1E582AFC0020B7CA /* Main.storyboard */; };
 		095AE7B21E582AFC0020B7CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095AE7B11E582AFC0020B7CA /* Assets.xcassets */; };
@@ -35,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		09094E8C1EF25FA800971286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 095AE79F1E582AFC0020B7CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09094E7F1EF25FA800971286;
+			remoteInfo = testWidget;
+		};
 		095AE7BC1E582AFD0020B7CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 095AE79F1E582AFC0020B7CA /* Project object */;
@@ -51,7 +62,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		09094E921EF25FA800971286 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				09094E8E1EF25FA800971286 /* testWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		09094E801EF25FA800971286 /* testWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = testWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		09094E821EF25FA800971286 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		09094E851EF25FA800971286 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		09094E861EF25FA800971286 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		09094E891EF25FA800971286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		09094E8B1EF25FA800971286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		095AE7A71E582AFC0020B7CA /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		095AE7AA1E582AFC0020B7CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		095AE7AF1E582AFC0020B7CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +117,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		09094E7D1EF25FA800971286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09094E831EF25FA800971286 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		095AE7A41E582AFC0020B7CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,12 +149,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09094E811EF25FA800971286 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09094E821EF25FA800971286 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09094E841EF25FA800971286 /* testWidget */ = {
+			isa = PBXGroup;
+			children = (
+				09094E851EF25FA800971286 /* TodayViewController.h */,
+				09094E861EF25FA800971286 /* TodayViewController.m */,
+				09094E881EF25FA800971286 /* MainInterface.storyboard */,
+				09094E8B1EF25FA800971286 /* Info.plist */,
+			);
+			path = testWidget;
+			sourceTree = "<group>";
+		};
 		095AE79E1E582AFC0020B7CA = {
 			isa = PBXGroup;
 			children = (
 				095AE7A91E582AFC0020B7CA /* ToDo */,
 				095AE7BE1E582AFD0020B7CA /* ToDoTests */,
 				09A1A7751E975CD100042E68 /* ToDoUITests */,
+				09094E841EF25FA800971286 /* testWidget */,
+				09094E811EF25FA800971286 /* Frameworks */,
 				095AE7A81E582AFC0020B7CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,6 +186,7 @@
 				095AE7A71E582AFC0020B7CA /* ToDo.app */,
 				095AE7BB1E582AFD0020B7CA /* ToDoTests.xctest */,
 				09A1A7741E975CD100042E68 /* ToDoUITests.xctest */,
+				09094E801EF25FA800971286 /* testWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,6 +275,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		09094E7F1EF25FA800971286 /* testWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09094E911EF25FA800971286 /* Build configuration list for PBXNativeTarget "testWidget" */;
+			buildPhases = (
+				09094E7C1EF25FA800971286 /* Sources */,
+				09094E7D1EF25FA800971286 /* Frameworks */,
+				09094E7E1EF25FA800971286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testWidget;
+			productName = testWidget;
+			productReference = 09094E801EF25FA800971286 /* testWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		095AE7A61E582AFC0020B7CA /* ToDo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 095AE7C41E582AFD0020B7CA /* Build configuration list for PBXNativeTarget "ToDo" */;
@@ -221,10 +299,12 @@
 				095AE7A31E582AFC0020B7CA /* Sources */,
 				095AE7A41E582AFC0020B7CA /* Frameworks */,
 				095AE7A51E582AFC0020B7CA /* Resources */,
+				09094E921EF25FA800971286 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				09094E8D1EF25FA800971286 /* PBXTargetDependency */,
 			);
 			name = ToDo;
 			productName = ToDo;
@@ -277,6 +357,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = hanbaoyu;
 				TargetAttributes = {
+					09094E7F1EF25FA800971286 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 5XH2467S9U;
+					};
 					095AE7A61E582AFC0020B7CA = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 5XH2467S9U;
@@ -312,11 +396,20 @@
 				095AE7A61E582AFC0020B7CA /* ToDo */,
 				095AE7BA1E582AFD0020B7CA /* ToDoTests */,
 				09A1A7731E975CD100042E68 /* ToDoUITests */,
+				09094E7F1EF25FA800971286 /* testWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		09094E7E1EF25FA800971286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09094E8A1EF25FA800971286 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		095AE7A51E582AFC0020B7CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +437,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		09094E7C1EF25FA800971286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09094E871EF25FA800971286 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		095AE7A31E582AFC0020B7CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +491,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		09094E8D1EF25FA800971286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09094E7F1EF25FA800971286 /* testWidget */;
+			targetProxy = 09094E8C1EF25FA800971286 /* PBXContainerItemProxy */;
+		};
 		095AE7BD1E582AFD0020B7CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 095AE7A61E582AFC0020B7CA /* ToDo */;
@@ -403,6 +509,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		09094E881EF25FA800971286 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09094E891EF25FA800971286 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		095AE7AE1E582AFC0020B7CA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,6 +536,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		09094E8F1EF25FA800971286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5XH2467S9U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = testWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tdd.ToDo.h.testWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09094E901EF25FA800971286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5XH2467S9U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = testWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tdd.ToDo.h.testWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		095AE7C21E582AFD0020B7CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -517,6 +677,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5XH2467S9U;
 				INFOPLIST_FILE = ToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -530,6 +691,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5XH2467S9U;
 				INFOPLIST_FILE = ToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -602,6 +764,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		09094E911EF25FA800971286 /* Build configuration list for PBXNativeTarget "testWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09094E8F1EF25FA800971286 /* Debug */,
+				09094E901EF25FA800971286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		095AE7A21E582AFC0020B7CA /* Build configuration list for PBXProject "ToDo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -636,6 +806,7 @@
 				09A1A77D1E975CD100042E68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
